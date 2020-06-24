@@ -5,7 +5,7 @@ jobs:
     # Use the same Docker base as the project
       - image: anandatreya/con_sklearn
     
-    working_directory: ~/repo
+    #working_directory: ~/repo
     
     steps:
       - checkout
