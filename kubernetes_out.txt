@@ -1,0 +1,94 @@
+0623 15:42:34.259220    8268 loader.go:375] Config loaded from file:  /root/.kube/config
+I0623 15:42:34.260093    8268 cert_rotation.go:137] Starting client certificate rotation controller
+I0623 15:42:34.265332    8268 round_trippers.go:420] GET https://172.31.20.189:8443/api/v1/namespaces/default/pods/podsklearn
+I0623 15:42:34.265354    8268 round_trippers.go:427] Request Headers:
+I0623 15:42:34.265369    8268 round_trippers.go:431]     Accept: application/json, */*
+I0623 15:42:34.265381    8268 round_trippers.go:431]     User-Agent: kubectl/v1.18.3 (linux/amd64) kubernetes/2e7996e
+I0623 15:42:34.275769    8268 round_trippers.go:446] Response Status: 200 OK in 10 milliseconds
+I0623 15:42:34.275793    8268 round_trippers.go:449] Response Headers:
+I0623 15:42:34.275800    8268 round_trippers.go:452]     Cache-Control: no-cache, private
+I0623 15:42:34.275814    8268 round_trippers.go:452]     Content-Type: application/json
+I0623 15:42:34.275823    8268 round_trippers.go:452]     Content-Length: 3571
+I0623 15:42:34.275859    8268 round_trippers.go:452]     Date: Tue, 23 Jun 2020 15:42:34 GMT
+I0623 15:42:34.275939    8268 request.go:1068] Response Body: {"kind":"Pod","apiVersion":"v1","metadata":{"name":"podsklearn","namespace":"default","selfLink":"/api/v1/namespaces/default/pods/podsklearn","uid":"58295f74-bd52-4bb0-831f-39942318c524","resourceVersion":"439990","creationTimestamp":"2020-06-23T15:34:40Z","labels":{"app":"con_sklearn"},"managedFields":[{"manager":"kubectl","operation":"Update","apiVersion":"v1","time":"2020-06-23T15:34:40Z","fieldsType":"FieldsV1","fieldsV1":{"f:metadata":{"f:labels":{".":{},"f:app":{}}},"f:spec":{"f:containers":{"k:{\"name\":\"podsklearn\"}":{".":{},"f:image":{},"f:imagePullPolicy":{},"f:name":{},"f:ports":{".":{},"k:{\"containerPort\":80,\"protocol\":\"TCP\"}":{".":{},"f:containerPort":{},"f:protocol":{}}},"f:resources":{},"f:terminationMessagePath":{},"f:terminationMessagePolicy":{}}},"f:dnsPolicy":{},"f:enableServiceLinks":{},"f:restartPolicy":{},"f:schedulerName":{},"f:securityContext":{},"f:terminationGracePeriodSeconds":{}}}},{"manager":"kubelet","operation":"Update","apiVersion":"v1","time":"2020-06-23T15:34:42Z","fi [truncated 2547 chars]
+I0623 15:42:34.281979    8268 round_trippers.go:420] GET https://172.31.20.189:8443/api/v1/namespaces/default/pods/podsklearn/log
+I0623 15:42:34.282002    8268 round_trippers.go:427] Request Headers:
+I0623 15:42:34.282017    8268 round_trippers.go:431]     Accept: application/json, */*
+I0623 15:42:34.282029    8268 round_trippers.go:431]     User-Agent: kubectl/v1.18.3 (linux/amd64) kubernetes/2e7996e
+I0623 15:42:34.286680    8268 round_trippers.go:446] Response Status: 200 OK in 4 milliseconds
+I0623 15:42:34.286854    8268 round_trippers.go:449] Response Headers:
+I0623 15:42:34.286908    8268 round_trippers.go:452]     Cache-Control: no-cache, private
+I0623 15:42:34.286997    8268 round_trippers.go:452]     Content-Type: text/plain
+I0623 15:42:34.287047    8268 round_trippers.go:452]     Date: Tue, 23 Jun 2020 15:42:34 GMT
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 114-308-546
+[2020-06-23 15:35:52,153] INFO in app: JSON payload:
+{json_payload}
+[2020-06-23 15:35:52,155] INFO in app: Inference payload DataFrame:
+{inference_payload}
+[2020-06-23 15:35:52,156] INFO in app: Scaling Payload:
+{payload}
+[2020-06-23 15:35:52,160] INFO in app: Prediction Print:
+{prediction}
+127.0.0.1 - - [23/Jun/2020 15:35:52] "POST /predict HTTP/1.1" 200 -
+[2020-06-23 15:35:56,913] INFO in app: JSON payload:
+{json_payload}
+[2020-06-23 15:35:56,915] INFO in app: Inference payload DataFrame:
+{inference_payload}
+[2020-06-23 15:35:56,915] INFO in app: Scaling Payload:
+{payload}
+[2020-06-23 15:35:56,919] INFO in app: Prediction Print:
+{prediction}
+127.0.0.1 - - [23/Jun/2020 15:35:56] "POST /predict HTTP/1.1" 200 -
+[2020-06-23 15:36:01,217] INFO in app: JSON payload:
+{json_payload}
+[2020-06-23 15:36:01,218] INFO in app: Inference payload DataFrame:
+{inference_payload}
+[2020-06-23 15:36:01,219] INFO in app: Scaling Payload:
+{payload}
+[2020-06-23 15:36:01,222] INFO in app: Prediction Print:
+{prediction}
+127.0.0.1 - - [23/Jun/2020 15:36:01] "POST /predict HTTP/1.1" 200 -
+[2020-06-23 15:36:03,387] INFO in app: JSON payload:
+{json_payload}
+[2020-06-23 15:36:03,389] INFO in app: Inference payload DataFrame:
+{inference_payload}
+[2020-06-23 15:36:03,389] INFO in app: Scaling Payload:
+{payload}
+[2020-06-23 15:36:03,392] INFO in app: Prediction Print:
+{prediction}
+127.0.0.1 - - [23/Jun/2020 15:36:03] "POST /predict HTTP/1.1" 200 -
+[2020-06-23 15:38:16,523] INFO in app: JSON payload:
+{json_payload}
+[2020-06-23 15:38:16,524] INFO in app: Inference payload DataFrame:
+{inference_payload}
+[2020-06-23 15:38:16,524] INFO in app: Scaling Payload:
+{payload}
+[2020-06-23 15:38:16,528] INFO in app: Prediction Print:
+{prediction}
+127.0.0.1 - - [23/Jun/2020 15:38:16] "POST /predict HTTP/1.1" 200 -
+[2020-06-23 15:38:59,437] INFO in app: JSON payload:
+{json_payload}
+[2020-06-23 15:38:59,439] INFO in app: Inference payload DataFrame:
+{inference_payload}
+[2020-06-23 15:38:59,439] INFO in app: Scaling Payload:
+{payload}
+[2020-06-23 15:38:59,442] INFO in app: Prediction Print:
+{prediction}
+127.0.0.1 - - [23/Jun/2020 15:38:59] "POST /predict HTTP/1.1" 200 -
+[2020-06-23 15:40:00,371] INFO in app: JSON payload:
+{json_payload}
+[2020-06-23 15:40:00,373] INFO in app: Inference payload DataFrame:
+{inference_payload}
+[2020-06-23 15:40:00,373] INFO in app: Scaling Payload:
+{payload}
+[2020-06-23 15:40:00,376] INFO in app: Prediction Print:
+{prediction}
+127.0.0.1 - - [23/Jun/2020 15:40:00] "POST /predict HTTP/1.1" 200 -
