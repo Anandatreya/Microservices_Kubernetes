@@ -1,0 +1,17 @@
+on_payload}
+[2020-06-23 12:06:12,916] INFO in app: Inference payload DataFrame:
+{inference_payload}
+[2020-06-23 12:06:12,916] INFO in app: Scaling Payload:
+{payload}
+[2020-06-23 12:06:12,920] INFO in app: Prediction Print:
+{prediction}
+172.17.0.1 - - [23/Jun/2020 12:06:12] "POST /predict HTTP/1.1" 200 -
+[2020-06-23 12:07:31,877] INFO in app: JSON payload:
+{json_payload}
+[2020-06-23 12:07:31,879] INFO in app: Inference payload DataFrame:
+{inference_payload}
+[2020-06-23 12:07:31,879] INFO in app: Scaling Payload:
+{payload}
+[2020-06-23 12:07:31,882] INFO in app: Prediction Print:
+{prediction}
+172.17.0.1 - - [23/Jun/2020 12:07:31] "POST /predict HTTP/1.1" 200 -
