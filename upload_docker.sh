@@ -5,7 +5,7 @@
 
 # Step 1:
 # Create dockerpath
- dockerpath=anandatreya/con_sklearn
+dockerpath=anandatreya/con_sklearn
 
 # Step 2:  
 # Authenticate & tag
