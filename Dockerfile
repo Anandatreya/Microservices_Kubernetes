@@ -6,7 +6,7 @@ WORKDIR /sklearn_app
 
 ## Step 2:
 # Copy source code to working directory
-COPY . app.py /sklearn_app/
+COPY . /sklearn_app/
 ## Step 3:
 # Install packages from requirements.txt
 # hadolint ignore=DL3013
